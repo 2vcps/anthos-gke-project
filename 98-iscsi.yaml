@@ -1,0 +1,4 @@
+network:
+  ethernets:
+    ens224:
+      dhcp4: true

@@ -4,3 +4,6 @@ do
        govc vm.network.add -vm $vm -net "iSCSI1" -net.adapter e1000e
        govc device.info -vm $vm ethernet-*
 done
+
+echo "Run ansible-playbook"
+ansible-playbook add-nics-ips.yaml
